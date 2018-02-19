@@ -1,0 +1,21 @@
+<center><h2><u>Delete records</u></h2> 
+</center>
+<p><h5>Enter the Image ID whose entry you want to delete from the database</h5>
+</p>
+
+<!-- Image ID is used as a primary key to identify and delete the record -->
+
+<? echo form_open('pages/delete'); ?>
+
+Image ID: 
+<? echo form_input('img_id'); ?>
+
+<? echo form_submit('delete_sub','Delete Record');  ?>
+
+<? echo form_close(); ?>
+
+<font color="green"><?php echo $msg ?></font>
+
+
+
+

@@ -1,0 +1,32 @@
+<div >
+<h5>Existing records in the Data Base</h5> 
+<center>
+
+<!-- Gets the table contents from the database and displays in every page -->
+
+<table border="1">
+<tr>
+<td><h4>Image ID</h4></td>
+<td><h4>Image Name</h4></td>
+<td><h4>Image Path</h4></td>
+<td><h4>OnClick URL</h4></td>
+</tr>
+
+<?php foreach ($images as $images_item): ?>
+<tr>
+<td><?php echo $images_item['img_id'] ?></td>
+<td><?php echo $images_item['img_name'] ?></td>
+<td><?php echo $images_item['img_addr'] ?></td>
+<td><?php echo $images_item['img_url'] ?></td>
+</tr>
+ 
+<?php endforeach ?>
+
+</table>
+</center>
+
+</div>
+</div>	
+</body>
+</html>
+

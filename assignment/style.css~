@@ -1,0 +1,32 @@
+/*
+
+body, h1, ul, li {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: #e8dbcb url(images/bg-texture.jpg);
+}
+
+
+
+}
+
+
+h1 {
+	width: 262px; height: 226px; margin: 0 auto; position: relative; top: 100px;
+	background: url(images/harley-logo.png); text-indent: -9999px; z-index: 10;
+}
+
+*/
+
+
+#container {
+	width: auto; height: auto; margin: auto;
+	position: relative;
+
+div#slideshow { height: 518px; padding: 15px 0 0 12px;
+	overflow: scroll; /* Allows the slides to be viewed using scrollbar if Javascript isn't available */ 
+	position: relative; z-index: 5;
+}
+	

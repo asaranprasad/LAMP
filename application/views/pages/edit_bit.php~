@@ -1,0 +1,36 @@
+<center><h2><u>Edit records</u></h2> 
+
+<p><h5>Edit the required fields and click 'Modify' </h5>
+</p>
+
+<!-- Image ID is used as a primary key to identify and modify the record -->
+<!-- 3 submit buttons used to update img_name, img_addr, img_url fields in the DB -->
+<table width="600 px">
+<? echo form_open('pages/update'); ?>
+
+
+<? echo '<input type="hidden" name="img_id" value="'.$row['img_id'].'" />'; ?>
+
+
+<tr>
+<td>File Name:</td> 
+<td><? echo '<input type="text" name="img_name" size="50" value="'.$row['img_name'].'" />'; ?></td>
+</tr>
+
+<tr>
+<td>File Path:</td> 
+<td><? echo '<input type="text" name="img_addr" size="50" value="'.$row['img_addr'].'" />'; ?></td>
+</tr>
+
+
+<tr>
+<td>OnClick URL:</td> 
+<td><? echo '<input type="text" name="img_url" size="50" value="'.$row['img_url'].'" />'; ?></td>
+</tr>
+</table>
+<br/>
+<? echo form_submit('edit_entry','Modify Entry');  ?>
+
+<? echo form_close(); ?>
+
+</center>
